@@ -12,7 +12,7 @@ const DisplayFood = ({ match }) => {
   const [isBusy, setBusy] = useState(true);
 
   const categorycolor = (category) => {
-    if (category == "veg") {
+    if (category === "veg") {
       return { color: "green" };
     } else {
       return { color: "red" };

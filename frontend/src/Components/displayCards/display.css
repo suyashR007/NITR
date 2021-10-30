@@ -1,0 +1,44 @@
+.hack_explore {
+  padding: 5%;
+}
+.main_ex_img .exp_img {
+  margin: 0 auto;
+  width: 80%;
+}
+.main_ex_img .exp_img .expimg {
+  width: 100%;
+  height: 60vh;
+}
+.hack_explore .dish_name {
+  text-align: center;
+  font-size: 36px;
+  color: #b1b1ea;
+  font-weight: 600;
+  width: 80%;
+  margin: 0 auto;
+}
+.hack_explore .dish_name {
+  border-bottom: solid 2px rgb(177, 177, 234);
+}
+.hack_explore .dish_recipe_ingre {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+}
+.hack_explore .ingredients {
+  width: 25%;
+}
+
+.hack_explore .recipe {
+  width: 75%;
+  text-align: left;
+}
+
+.hack_explore .ingre_title {
+  font-size: 25px;
+  color: rgb(177, 177, 234);
+}
+.hack_explore .recipe_title {
+  font-size: 25px;
+  color: rgb(177, 177, 234);
+}

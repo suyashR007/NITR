@@ -1,0 +1,51 @@
+.header {
+  padding: 1% 0;
+  width: 100%;
+  background: #282d32;
+  color: #f0f9ff;
+}
+
+.header .navbar {
+  margin: 0 5%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .navbar .brand {
+  width: 20%;
+}
+
+.header .navbar .brand a img {
+  width: 100%;
+}
+
+.header .navbar a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header .navbar a:hover {
+  text-decoration: underline;
+}
+
+.header .navbar .navigation {
+  display: flex;
+}
+
+.header .navbar .navigation div {
+  padding: 0 10px;
+}
+
+.header .navbar .account {
+  display: flex;
+}
+
+.header .navbar .account div {
+  padding: 0 10px;
+}
+
+.header .navbar .account div span {
+  cursor: pointer;
+}

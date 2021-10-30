@@ -3,7 +3,7 @@
 }
 .main_ex_img .exp_img {
   margin: 0 auto;
-  width: 80%;
+  width: 60%;
 }
 .main_ex_img .exp_img .expimg {
   width: 100%;
@@ -20,6 +20,18 @@
 .hack_explore .dish_name {
   border-bottom: solid 2px rgb(177, 177, 234);
 }
+
+.hack_explore .category {
+  padding: 10px 10%;
+  font-size: 25px;
+  color: rgb(177, 177, 234);
+}
+
+.hack_explore .category span {
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
 .hack_explore .dish_recipe_ingre {
   width: 80%;
   margin: 0 auto;

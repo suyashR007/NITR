@@ -8,7 +8,7 @@ import Signup from "./Pages/Signup";
 import Home from "./Pages/Home";
 
 import explore from "./Components/cards/explore";
-import displayFood from "./Components/displayCards/display";
+import DisplayFood from "./Components/displayCards/display";
 import AboutUs from "./Pages/AboutUs";
 
 const Routes = () => {
@@ -24,7 +24,7 @@ const Routes = () => {
           component={OtpVerification}
         />
         <Route path="/explore" exact component={explore} />
-        <Route path="/display" exact component={displayFood} />
+        <Route path="/display/:id" exact component={DisplayFood} />
         <Route path="/about-us" exact component={AboutUs} />
       </Switch>
     </BrowserRouter>

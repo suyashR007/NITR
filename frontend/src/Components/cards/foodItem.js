@@ -1,8 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./explore.css";
 
 const FoodItem = (dish) => {
   console.log(dish);
+  const url = `display/${dish.dish._id}`;
   return (
     <div className="main_card_body">
       {dish.dish.image.map((image, index) => {
@@ -17,9 +19,9 @@ const FoodItem = (dish) => {
         <p>{dish.dish.title}</p>
       </div>
       <div className="read_more_but">
-        <a href="/display">
+        <Link to={url}>
           <button>Read More</button>
-        </a>
+        </Link>
       </div>
     </div>
   );

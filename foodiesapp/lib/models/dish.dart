@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 class DishItem with ChangeNotifier {
+  final String id;
   final String title;
   final String recipe;
   final String image;
@@ -9,6 +10,7 @@ class DishItem with ChangeNotifier {
   final String schedule;
 
   DishItem({
+    required this.id,
     required this.title,
     required this.recipe,
     required this.image,

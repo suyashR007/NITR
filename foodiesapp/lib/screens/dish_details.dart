@@ -12,8 +12,8 @@ class DishDetails extends StatefulWidget {
 class _DishDetailsState extends State<DishDetails> {
   @override
   Widget build(BuildContext context) {
-    final dishtitle = ModalRoute.of(context)?.settings.arguments as String;
-    final dishDetails = Provider.of<Dish>(context).findDishByTitle(dishtitle);
+    final dishID = ModalRoute.of(context)?.settings.arguments as String;
+    final dishDetails = Provider.of<Dish>(context).findDishByTitle(dishID);
     return Scaffold(
       appBar: AppBar(
         title: Text(dishDetails.title),

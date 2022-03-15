@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:foodiesapp/screens/homepage.dart';
+import 'package:foodiesapp/screens/all_products.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: HomePage(),
+      home: AllProducts(),
     );
   }
 }

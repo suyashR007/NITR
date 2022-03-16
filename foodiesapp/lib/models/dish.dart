@@ -1,5 +1,9 @@
+import 'package:json_annotation/json_annotation.dart';
 import 'package:flutter/material.dart';
 
+part 'dish.g.dart';
+
+@JsonSerializable()
 class DishItem with ChangeNotifier {
   final String id;
   final String title;
@@ -18,4 +22,8 @@ class DishItem with ChangeNotifier {
     required this.ingredients,
     required this.schedule,
   });
+
+  factory DishItem.fromJson(Map<String, dynamic> json) =>
+      _$DishItemFromJson(json);
+  Map<String, dynamic> toJson() => _$DishItemToJson(this);
 }

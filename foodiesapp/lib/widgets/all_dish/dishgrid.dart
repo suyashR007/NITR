@@ -8,7 +8,7 @@ class DishGrid extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final dishData = Provider.of<Dish>(context);
+    final dishData = Provider.of<Dishes>(context);
     final dishes = dishData.items;
     return GridView.builder(
         itemCount: dishes.length,

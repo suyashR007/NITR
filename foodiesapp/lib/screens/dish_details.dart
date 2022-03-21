@@ -13,7 +13,7 @@ class _DishDetailsState extends State<DishDetails> {
   @override
   Widget build(BuildContext context) {
     final dishID = ModalRoute.of(context)?.settings.arguments as String;
-    final dishDetails = Provider.of<Dish>(context).findDishByTitle(dishID);
+    final dishDetails = Provider.of<Dishes>(context).findDishByTitle(dishID);
     return Scaffold(
       appBar: AppBar(
         title: Text(dishDetails.title),

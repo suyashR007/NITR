@@ -8,6 +8,7 @@ class DishItem with ChangeNotifier {
   final String id;
   final String title;
   final String recipe;
+  final int likes;
   final String image;
   final String category;
   final String ingredients;
@@ -17,6 +18,7 @@ class DishItem with ChangeNotifier {
     required this.id,
     required this.title,
     required this.recipe,
+    required this.likes,
     required this.image,
     required this.category,
     required this.ingredients,

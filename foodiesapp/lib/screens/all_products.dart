@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:foodiesapp/Dio/dio_client.dart';
-import 'package:foodiesapp/models/dish.dart';
+import 'package:foodiesapp/providers/dish_provider.dart';
+import 'package:foodiesapp/widgets/all_dish/dishgrid.dart';
+import 'package:provider/provider.dart';
 
 class AllProducts extends StatefulWidget {
   const AllProducts({Key? key}) : super(key: key);
@@ -13,23 +15,16 @@ class _AllProductsState extends State<AllProducts> {
   @override
   void didChangeDependencies() {
     super.didChangeDependencies();
-    //Provider.of<Dish>(context).fetchAndSetProduct();
+    Provider.of<Dishes>(context).fetchAndSetProduct();
   }
 
   @override
   Widget build(BuildContext context) {
-    DioClient _client = DioClient();
     return Scaffold(
       appBar: AppBar(
         title: const Text('All Dishes'),
       ),
-      body: FutureBuilder(
-        future: _client.getDish(),
-        builder: (context, snapshot) {
-          DishItem dishData = snapshot.data;
-          return const CircularProgressIndicator();
-        },
-      ),
+      body: const DishGrid(),
     );
   }
 }

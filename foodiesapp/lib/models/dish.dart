@@ -29,3 +29,15 @@ class DishItem with ChangeNotifier {
       _$DishItemFromJson(json);
   Map<String, dynamic> toJson() => _$DishItemToJson(this);
 }
+
+class Images {
+  String? id;
+  String? url;
+
+  Images({this.id, this.url});
+
+  Images.fromJson(Map<String, dynamic> json) {
+    id = json['_id'] as String;
+    url = json['url'] as String;
+  }
+}
